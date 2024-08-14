@@ -15,7 +15,7 @@
 }
 .div-div {
   display: flex;
-  gap: 30px;
+  gap: 35px;
   margin-top: 12px;
   margin-left: auto;
   margin-right: auto;
@@ -29,7 +29,7 @@
   text-align: center;
   align-content: center;
   border-radius: 5px;
-  margin-top: -10px;
+  margin-top: -14px;
   cursor: pointer;
 }
 /* navbar ends here */
@@ -82,6 +82,15 @@
   display: flex;
   gap: 50px;
   margin-top: 10px;
+  animation: scroll infinite 30s linear;
+}
+@keyframes scroll {
+  0% {
+    transform: translateX(100%);
+  }
+  100% {
+    transform: translateX(-100%);
+  }
 }
 /* clients page ends here */
 /* group sec begins here */
@@ -104,12 +113,20 @@
 }
 .box-div {
   width: 100%;
-  gap: 30px;
+  gap: 27px;
   display: flex;
   justify-content: center;
   flex-wrap: wrap;
 }
-.box-div div {
+.membership {
+  width: 350px;
+  height: 300px;
+  background-color: rgb(240, 244, 245);
+  margin-top: 50px;
+  align-content: center;
+  justify-content: center;
+}
+.Clubs {
   width: 350px;
   height: 300px;
   background-color: rgb(240, 244, 245);
@@ -306,6 +323,7 @@ hr {
     display: flex;
     width: auto;
     height: 50vh;
+    margin-top: 10px;
   }
   .div h1 {
     font-size: small;
@@ -321,10 +339,29 @@ hr {
     height: auto;
     display: grid;
   }
+  .sec h1 {
+    width: auto;
+  }
+  .membership {
+    width: 48%;
+    height: 280px;
+  }
+  .membership p {
+    width: auto;
+  }
+  .Clubs {
+    width: 200%;
+    height: 200px;
+    margin-bottom: 110px;
+  }
+  .box-div {
+    gap: 10px;
+  }
   .pixel {
     display: flex;
     height: 47vh;
     width: auto;
+    margin-bottom: 20%;
   }
   .pixel .img img {
     width: 250px;
@@ -338,22 +375,24 @@ hr {
     font-size: small;
   }
   .online-sec {
-    display: flex;
+    display: grid;
     height: auto;
-    width: auto;
+    width: 100%;
   }
   .write h3 {
-    font-size: medium;
-    width: 100%;
+    font-size: large;
+    width: auto;
+    margin-top: 60px;
   }
   .write p {
     font-size: small;
+    width: auto;
   }
   .traffic {
     height: 27vh;
     width: auto;
     margin-top: 20%;
-    grid-template-rows: 10px;
+    grid-template-rows: 8%;
   }
   .marketing {
     width: 100%;
@@ -367,6 +406,7 @@ hr {
   .imgg {
     display: grid;
     grid-row-gap: 47px;
+    width: auto;
   }
   .footer {
     height: 100%;
